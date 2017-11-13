@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Omkar Desai/Documents/GIT/Data structures/STL/CAD.cpp" "C:/Users/Omkar Desai/Documents/GIT/Data structures/STL/cmake-build-debug/CMakeFiles/STL.dir/CAD.cpp.obj"
-  "C:/Users/Omkar Desai/Documents/GIT/Data structures/STL/main.cpp" "C:/Users/Omkar Desai/Documents/GIT/Data structures/STL/cmake-build-debug/CMakeFiles/STL.dir/main.cpp.obj"
-  "C:/Users/Omkar Desai/Documents/GIT/Data structures/STL/vector.cpp" "C:/Users/Omkar Desai/Documents/GIT/Data structures/STL/cmake-build-debug/CMakeFiles/STL.dir/vector.cpp.obj"
+  "C:/Users/Omkar Desai/Documents/C++/Data structures/STL/CAD.cpp" "C:/Users/Omkar Desai/Documents/C++/Data structures/STL/cmake-build-debug/CMakeFiles/STL.dir/CAD.cpp.obj"
+  "C:/Users/Omkar Desai/Documents/C++/Data structures/STL/main.cpp" "C:/Users/Omkar Desai/Documents/C++/Data structures/STL/cmake-build-debug/CMakeFiles/STL.dir/main.cpp.obj"
+  "C:/Users/Omkar Desai/Documents/C++/Data structures/STL/vector.cpp" "C:/Users/Omkar Desai/Documents/C++/Data structures/STL/cmake-build-debug/CMakeFiles/STL.dir/vector.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
