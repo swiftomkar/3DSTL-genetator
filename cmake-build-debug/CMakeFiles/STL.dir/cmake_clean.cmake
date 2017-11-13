@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/STL.dir/main.cpp.obj"
-  "CMakeFiles/STL.dir/vector.cpp.obj"
   "CMakeFiles/STL.dir/CAD.cpp.obj"
   "STL.pdb"
   "STL.exe"
