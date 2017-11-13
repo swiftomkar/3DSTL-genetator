@@ -15,6 +15,19 @@ Cylinder::Cylinder(double x, double y, double z, double r, double h, int facets)
 void Cylinder::vir(){}
 Cube::Cube(double x, double y, double z, double size) : Shape(x,y,z),size(size) {
     //write algo to make a cube
+
+    points.push_back({x,y,z});
+    points.push_back({x+size,y,z});
+
+    points.push_back({x,y+size,z});
+    points.push_back({x+size,y+size,z});
+
+    points.push_back({x,y,z+size});
+    points.push_back({x+size,y,z+size});
+
+    points.push_back({x,y+size,z+size});
+    points.push_back({x+size,y+size,z+size});
+
 }
 void Cube::vir(){}
 CAD::CAD(){}
@@ -23,17 +36,31 @@ void CAD::add(Shape* a){
 }
 
 
-void CAD::write(std::string a){
+void Cube::write(std::string a,double first, double second, double third){
     std::ofstream stl(a);
     stl<<"solid OpenSCAD_Model\n";
-        stl << "\tfacet normal\n";
-        stl << "\t\touter loop\n";
-        stl << "\t\t\tvertex\n";
-        stl << "\t\t\tvertex\n";
-        stl << "\t\t\tvertex\n";
-        stl << "\t\tendloop\n";
-        stl << "\tendfacet\n";
+    stl<<"outer loop\n";
+    stl<<"vertex"<<" "<< points[first][0]<<" "<<points[first][1]<<" "<<points[first][2]<<'\n';
+    stl<<"vertex"<<" "<< points[second][0]<<" "<<points[second][1]<<" "<<points[second][2]<<'\n';
+    stl<<"vertex"<<" "<< points[third][0]<<" "<<points[third][1]<<" "<<points[third][2]<<'\n';
+    stl<<"endloop"<<'\n';
     stl.close();
+
+}
+void Cube::triGen(std::string a){
+
+    write(a,0,1,2);
+    write(a,1,2,3);
+    write(a,4,5,6);
+    write(a,5,6,7);
+    write(a,0,2,4);
+    write(a,2,4,6);
+    write(a,2,3,6);
+    write(a,3,6,7);
+    write(a,1,3,5);
+    write(a,3,5,7);
+    write(a,0,1,4);
+    write(a,1,4,5);
 }
 
 CAD::~CAD(){

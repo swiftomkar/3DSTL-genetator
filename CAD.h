@@ -12,6 +12,7 @@ private:
     double x,y,z;
 public:
     Shape(double x, double y, double z);
+
     virtual void vir()=0;
 };
 
@@ -27,8 +28,11 @@ public:
 class Cube: public Shape {
 private:
     double size;
+    std::vector<std::vector<int>> points;
 public:
     Cube(double x, double y, double z, double size);
+    void write(std::string a,double first, double second, double third);
+    void triGen(std::string a);
     void vir();
 };
 
@@ -38,6 +42,6 @@ private:
 public:
     CAD();
     void add(Shape* a);
-    void write(std::string a);
+
     ~CAD();
 };
