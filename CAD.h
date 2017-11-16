@@ -28,20 +28,21 @@ public:
 class Cube: public Shape {
 private:
     double size;
-    std::vector<std::vector<int>> points;
+
 public:
     Cube(double x, double y, double z, double size);
-    void write(std::string a,double first, double second, double third);
-    void triGen(std::string a);
+
     void vir();
 };
 
-class CAD {
+class SCAD {
 private:
     std::vector<Shape*> shapes;
 public:
-    CAD();
+    SCAD();
     void add(Shape* a);
+    void write(std::string a,double first, double second, double third);
+    void triGen(std::string a);
 
-    ~CAD();
+    ~SCAD();
 };

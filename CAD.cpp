@@ -7,6 +7,7 @@
  * 3) writes the output from cube and cylinder constructors to a STL file
 */
 #include "CAD.h"
+std::vector<std::vector<int>> points;
 #include "vector.h"
 Shape::Shape(double x, double y, double z):x(x),y(y),z(z){}
 Cylinder::Cylinder(double x, double y, double z, double r, double h, int facets):Shape(x,y,z),r(r),h(h),facets(facets) {
@@ -28,15 +29,18 @@ Cube::Cube(double x, double y, double z, double size) : Shape(x,y,z),size(size) 
     points.push_back({x,y+size,z+size});
     points.push_back({x+size,y+size,z+size});
 
+    for(auto s: points)
+        std::cout<<s[0]<<" "<<s[1]<<" "<<s[2]<<'\n';
+
 }
 void Cube::vir(){}
-CAD::CAD(){}
-void CAD::add(Shape* a){
+SCAD::SCAD(){}
+void SCAD::add(Shape* a){
     shapes.push_back(a);
 }
 
 
-void Cube::write(std::string a,double first, double second, double third){
+void SCAD::write(std::string a,double first, double second, double third){
     std::ofstream stl(a);
     stl<<"solid OpenSCAD_Model\n";
     stl<<"\touter loop\n";
@@ -47,7 +51,7 @@ void Cube::write(std::string a,double first, double second, double third){
     stl.close();
 
 }
-void Cube::triGen(std::string a){
+void SCAD::triGen(std::string a){
 
     write(a,0,1,2);
     write(a,1,2,3);
@@ -63,7 +67,7 @@ void Cube::triGen(std::string a){
     write(a,1,4,5);
 }
 
-CAD::~CAD(){
+SCAD::~SCAD(){
     for(int i=0;i<shapes.size();i++)
         delete shapes[i];
 }

@@ -16,9 +16,8 @@ using namespace std;
 //https://www.stratasysdirect.com/resources/how-to-prepare-stl-files/
 //https://www.viewstl.com/
 int main() {
-    CAD c;
-    Cube cube(0,0,0,10);
+    SCAD c;
     c.add(new Cube(0,0,0,   5));
     c.add(new Cylinder(100,0,0,    3, 10, 10));
-    cube.triGen("test.stl");
+    c.triGen("test.stl");
 }
