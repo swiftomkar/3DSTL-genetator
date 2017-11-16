@@ -1,6 +1,0 @@
-solid OpenSCAD_Model
-	outer loop
-		vertex 5 0 0
-		vertex 0 0 5
-		vertex 5 0 5
-	endloop

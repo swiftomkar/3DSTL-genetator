@@ -8,7 +8,8 @@
 */
 #include "CAD.h"
 std::vector<std::vector<int>> points;
-#include "vector.h"
+std::ofstream stl("cube.stl");
+
 Shape::Shape(double x, double y, double z):x(x),y(y),z(z){}
 Cylinder::Cylinder(double x, double y, double z, double r, double h, int facets):Shape(x,y,z),r(r),h(h),facets(facets) {
     //write algo to make a cylinder
@@ -39,20 +40,18 @@ void SCAD::add(Shape* a){
     shapes.push_back(a);
 }
 
-
 void SCAD::write(std::string a,double first, double second, double third){
-    std::ofstream stl(a);
-    stl<<"solid OpenSCAD_Model\n";
-    stl<<"\touter loop\n";
-    stl<<"\t\tvertex"<<" "<< points[first][0]<<" "<<points[first][1]<<" "<<points[first][2]<<'\n';
-    stl<<"\t\tvertex"<<" "<< points[second][0]<<" "<<points[second][1]<<" "<<points[second][2]<<'\n';
-    stl<<"\t\tvertex"<<" "<< points[third][0]<<" "<<points[third][1]<<" "<<points[third][2]<<'\n';
-    stl<<"\tendloop"<<'\n';
-    stl.close();
 
+    //stl<<"solid OpenSCAD_Model\n";
+    //stl<<"\tfacet normal -0 0 1\n";
+    stl<<"\t\touter loop\n";
+    stl<<"\t\t\tvertex"<<" "<< points[first][0]<<" "<<points[first][1]<<" "<<points[first][2]<<'\n';
+    stl<<"\t\t\tvertex"<<" "<< points[second][0]<<" "<<points[second][1]<<" "<<points[second][2]<<'\n';
+    stl<<"\t\t\tvertex"<<" "<< points[third][0]<<" "<<points[third][1]<<" "<<points[third][2]<<'\n';
+    stl<<"\t\tendloop"<<'\n';
+    //stl<<"\tend facet\n";
 }
 void SCAD::triGen(std::string a){
-
     write(a,0,1,2);
     write(a,1,2,3);
     write(a,4,5,6);
@@ -65,6 +64,20 @@ void SCAD::triGen(std::string a){
     write(a,3,5,7);
     write(a,0,1,4);
     write(a,1,4,5);
+
+/*    write(a,6,5,7);
+    write(a,5,6,4);
+    write(a,0,3,1);
+    write(a,3,0,2);
+    write(a,0,5,4);
+    write(a,5,0,1);
+    write(a,5,3,7);
+    write(a,3,5,1);
+    write(a,3,6,7);
+    write(a,6,3,2);
+    write(a,0,6,2);
+    write(a,4,0,4);
+    */
 }
 
 SCAD::~SCAD(){
