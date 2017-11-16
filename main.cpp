@@ -17,7 +17,7 @@ using namespace std;
 //https://www.viewstl.com/
 int main() {
     CAD c;
-    Cube cube(0,0,0,5);
+    Cube cube(0,0,0,10);
     c.add(new Cube(0,0,0,   5));
     c.add(new Cylinder(100,0,0,    3, 10, 10));
     cube.triGen("test.stl");

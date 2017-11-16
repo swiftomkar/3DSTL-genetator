@@ -9,6 +9,3 @@ CMakeFiles/STL.dir/main.cpp.obj: ../CAD.h
 CMakeFiles/STL.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/STL.dir/main.cpp.obj: ../vector.h
 
-CMakeFiles/STL.dir/vector.cpp.obj: ../vector.cpp
-CMakeFiles/STL.dir/vector.cpp.obj: ../vector.h
-

@@ -39,11 +39,11 @@ void CAD::add(Shape* a){
 void Cube::write(std::string a,double first, double second, double third){
     std::ofstream stl(a);
     stl<<"solid OpenSCAD_Model\n";
-    stl<<"outer loop\n";
-    stl<<"vertex"<<" "<< points[first][0]<<" "<<points[first][1]<<" "<<points[first][2]<<'\n';
-    stl<<"vertex"<<" "<< points[second][0]<<" "<<points[second][1]<<" "<<points[second][2]<<'\n';
-    stl<<"vertex"<<" "<< points[third][0]<<" "<<points[third][1]<<" "<<points[third][2]<<'\n';
-    stl<<"endloop"<<'\n';
+    stl<<"\touter loop\n";
+    stl<<"\t\tvertex"<<" "<< points[first][0]<<" "<<points[first][1]<<" "<<points[first][2]<<'\n';
+    stl<<"\t\tvertex"<<" "<< points[second][0]<<" "<<points[second][1]<<" "<<points[second][2]<<'\n';
+    stl<<"\t\tvertex"<<" "<< points[third][0]<<" "<<points[third][1]<<" "<<points[third][2]<<'\n';
+    stl<<"\tendloop"<<'\n';
     stl.close();
 
 }
