@@ -8,11 +8,14 @@
 */
 #include "CAD.h"
 std::vector<std::vector<int>> points;
+std::vector<std::vector<int>> cyl;
 std::ofstream stl("cube.stl");
 
 Shape::Shape(double x, double y, double z):x(x),y(y),z(z){}
 Cylinder::Cylinder(double x, double y, double z, double r, double h, int facets):Shape(x,y,z),r(r),h(h),facets(facets) {
     //write algo to make a cylinder
+    cyl.push_back({x,y,z});
+
 }
 void Cylinder::vir(){}
 Cube::Cube(double x, double y, double z, double size) : Shape(x,y,z),size(size) {
@@ -41,8 +44,6 @@ void SCAD::add(Shape* a){
 }
 
 void SCAD::write(std::string a,double first, double second, double third){
-
-    //stl<<"solid OpenSCAD_Model\n";
     stl<<"\tfacet normal 0 0 0\n";
     stl<<"\t\touter loop\n";
     stl<<"\t\t\tvertex"<<" "<< points[first][0]<<" "<<points[first][1]<<" "<<points[first][2]<<'\n';
@@ -51,7 +52,7 @@ void SCAD::write(std::string a,double first, double second, double third){
     stl<<"\t\tendloop"<<'\n';
     stl<<"\tendfacet\n";
 }
-void SCAD::triGen(std::string a){
+void SCAD::CubeGen(std::string a){
     write(a,0,1,2);
     write(a,1,2,3);
     write(a,4,5,6);
@@ -64,20 +65,6 @@ void SCAD::triGen(std::string a){
     write(a,3,5,7);
     write(a,0,1,4);
     write(a,1,4,5);
-/*
-    write(a,6,5,7);
-    write(a,5,6,4);
-    write(a,0,3,1);
-    write(a,3,0,2);
-    write(a,0,5,4);
-    write(a,5,0,1);
-    write(a,5,3,7);
-    write(a,3,5,1);
-    write(a,3,6,7);
-    write(a,6,3,2);
-    write(a,0,6,2);
-    write(a,4,0,4);
-*/
 }
 
 SCAD::~SCAD(){

@@ -1,84 +1,84 @@
 	facet normal 0 0 0
 		outer loop
-			vertex 0 0 0
-			vertex 14 0 0
-			vertex 0 14 0
+			vertex 12 15 0
+			vertex 27 15 0
+			vertex 12 30 0
 		endloop
 	endfacet
 	facet normal 0 0 0
 		outer loop
-			vertex 14 0 0
-			vertex 0 14 0
-			vertex 14 14 0
+			vertex 27 15 0
+			vertex 12 30 0
+			vertex 27 30 0
 		endloop
 	endfacet
 	facet normal 0 0 0
 		outer loop
-			vertex 0 0 14
-			vertex 14 0 14
-			vertex 0 14 14
+			vertex 12 15 15
+			vertex 27 15 15
+			vertex 12 30 15
 		endloop
 	endfacet
 	facet normal 0 0 0
 		outer loop
-			vertex 14 0 14
-			vertex 0 14 14
-			vertex 14 14 14
+			vertex 27 15 15
+			vertex 12 30 15
+			vertex 27 30 15
 		endloop
 	endfacet
 	facet normal 0 0 0
 		outer loop
-			vertex 0 0 0
-			vertex 0 14 0
-			vertex 0 0 14
+			vertex 12 15 0
+			vertex 12 30 0
+			vertex 12 15 15
 		endloop
 	endfacet
 	facet normal 0 0 0
 		outer loop
-			vertex 0 14 0
-			vertex 0 0 14
-			vertex 0 14 14
+			vertex 12 30 0
+			vertex 12 15 15
+			vertex 12 30 15
 		endloop
 	endfacet
 	facet normal 0 0 0
 		outer loop
-			vertex 0 14 0
-			vertex 14 14 0
-			vertex 0 14 14
+			vertex 12 30 0
+			vertex 27 30 0
+			vertex 12 30 15
 		endloop
 	endfacet
 	facet normal 0 0 0
 		outer loop
-			vertex 14 14 0
-			vertex 0 14 14
-			vertex 14 14 14
+			vertex 27 30 0
+			vertex 12 30 15
+			vertex 27 30 15
 		endloop
 	endfacet
 	facet normal 0 0 0
 		outer loop
-			vertex 14 0 0
-			vertex 14 14 0
-			vertex 14 0 14
+			vertex 27 15 0
+			vertex 27 30 0
+			vertex 27 15 15
 		endloop
 	endfacet
 	facet normal 0 0 0
 		outer loop
-			vertex 14 14 0
-			vertex 14 0 14
-			vertex 14 14 14
+			vertex 27 30 0
+			vertex 27 15 15
+			vertex 27 30 15
 		endloop
 	endfacet
 	facet normal 0 0 0
 		outer loop
-			vertex 0 0 0
-			vertex 14 0 0
-			vertex 0 0 14
+			vertex 12 15 0
+			vertex 27 15 0
+			vertex 12 15 15
 		endloop
 	endfacet
 	facet normal 0 0 0
 		outer loop
-			vertex 14 0 0
-			vertex 0 0 14
-			vertex 14 0 14
+			vertex 27 15 0
+			vertex 12 15 15
+			vertex 27 15 15
 		endloop
 	endfacet

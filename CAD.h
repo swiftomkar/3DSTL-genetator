@@ -42,7 +42,7 @@ public:
     SCAD();
     void add(Shape* a);
     void write(std::string a,double first, double second, double third);
-    void triGen(std::string a);
+    void CubeGen(std::string a);
 
     ~SCAD();
 };
