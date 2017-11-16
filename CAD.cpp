@@ -43,13 +43,13 @@ void SCAD::add(Shape* a){
 void SCAD::write(std::string a,double first, double second, double third){
 
     //stl<<"solid OpenSCAD_Model\n";
-    //stl<<"\tfacet normal -0 0 1\n";
+    stl<<"\tfacet normal 0 0 0\n";
     stl<<"\t\touter loop\n";
     stl<<"\t\t\tvertex"<<" "<< points[first][0]<<" "<<points[first][1]<<" "<<points[first][2]<<'\n';
     stl<<"\t\t\tvertex"<<" "<< points[second][0]<<" "<<points[second][1]<<" "<<points[second][2]<<'\n';
     stl<<"\t\t\tvertex"<<" "<< points[third][0]<<" "<<points[third][1]<<" "<<points[third][2]<<'\n';
     stl<<"\t\tendloop"<<'\n';
-    //stl<<"\tend facet\n";
+    stl<<"\tendfacet\n";
 }
 void SCAD::triGen(std::string a){
     write(a,0,1,2);
@@ -64,8 +64,8 @@ void SCAD::triGen(std::string a){
     write(a,3,5,7);
     write(a,0,1,4);
     write(a,1,4,5);
-
-/*    write(a,6,5,7);
+/*
+    write(a,6,5,7);
     write(a,5,6,4);
     write(a,0,3,1);
     write(a,3,0,2);
@@ -77,7 +77,7 @@ void SCAD::triGen(std::string a){
     write(a,6,3,2);
     write(a,0,6,2);
     write(a,4,0,4);
-    */
+*/
 }
 
 SCAD::~SCAD(){
