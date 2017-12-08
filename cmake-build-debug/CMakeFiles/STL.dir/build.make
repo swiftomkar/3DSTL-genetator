@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -E remo
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Omkar Desai\Documents\C++\Data structures\STL"
+CMAKE_SOURCE_DIR = "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Omkar Desai\Documents\C++\Data structures\STL\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/STL.dir/depend.make
@@ -58,16 +58,16 @@ include CMakeFiles/STL.dir/flags.make
 
 CMakeFiles/STL.dir/main.cpp.obj: CMakeFiles/STL.dir/flags.make
 CMakeFiles/STL.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Omkar Desai\Documents\C++\Data structures\STL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/STL.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\STL.dir\main.cpp.obj -c "C:\Users\Omkar Desai\Documents\C++\Data structures\STL\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/STL.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\STL.dir\main.cpp.obj -c "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\main.cpp"
 
 CMakeFiles/STL.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STL.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Omkar Desai\Documents\C++\Data structures\STL\main.cpp" > CMakeFiles\STL.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\main.cpp" > CMakeFiles\STL.dir\main.cpp.i
 
 CMakeFiles/STL.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STL.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Omkar Desai\Documents\C++\Data structures\STL\main.cpp" -o CMakeFiles\STL.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\main.cpp" -o CMakeFiles\STL.dir\main.cpp.s
 
 CMakeFiles/STL.dir/main.cpp.obj.requires:
 
@@ -82,16 +82,16 @@ CMakeFiles/STL.dir/main.cpp.obj.provides.build: CMakeFiles/STL.dir/main.cpp.obj
 
 CMakeFiles/STL.dir/CAD.cpp.obj: CMakeFiles/STL.dir/flags.make
 CMakeFiles/STL.dir/CAD.cpp.obj: ../CAD.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Omkar Desai\Documents\C++\Data structures\STL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/STL.dir/CAD.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\STL.dir\CAD.cpp.obj -c "C:\Users\Omkar Desai\Documents\C++\Data structures\STL\CAD.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/STL.dir/CAD.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\STL.dir\CAD.cpp.obj -c "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\CAD.cpp"
 
 CMakeFiles/STL.dir/CAD.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STL.dir/CAD.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Omkar Desai\Documents\C++\Data structures\STL\CAD.cpp" > CMakeFiles\STL.dir\CAD.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\CAD.cpp" > CMakeFiles\STL.dir\CAD.cpp.i
 
 CMakeFiles/STL.dir/CAD.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STL.dir/CAD.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Omkar Desai\Documents\C++\Data structures\STL\CAD.cpp" -o CMakeFiles\STL.dir\CAD.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\CAD.cpp" -o CMakeFiles\STL.dir\CAD.cpp.s
 
 CMakeFiles/STL.dir/CAD.cpp.obj.requires:
 
@@ -118,7 +118,7 @@ STL.exe: CMakeFiles/STL.dir/build.make
 STL.exe: CMakeFiles/STL.dir/linklibs.rsp
 STL.exe: CMakeFiles/STL.dir/objects1.rsp
 STL.exe: CMakeFiles/STL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Omkar Desai\Documents\C++\Data structures\STL\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable STL.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable STL.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\STL.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -136,6 +136,6 @@ CMakeFiles/STL.dir/clean:
 .PHONY : CMakeFiles/STL.dir/clean
 
 CMakeFiles/STL.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Omkar Desai\Documents\C++\Data structures\STL" "C:\Users\Omkar Desai\Documents\C++\Data structures\STL" "C:\Users\Omkar Desai\Documents\C++\Data structures\STL\cmake-build-debug" "C:\Users\Omkar Desai\Documents\C++\Data structures\STL\cmake-build-debug" "C:\Users\Omkar Desai\Documents\C++\Data structures\STL\cmake-build-debug\CMakeFiles\STL.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator" "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator" "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\cmake-build-debug" "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\cmake-build-debug" "C:\Users\Omkar Desai\Documents\C++\Data structures\3DSTL-genetator\cmake-build-debug\CMakeFiles\STL.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/STL.dir/depend
 

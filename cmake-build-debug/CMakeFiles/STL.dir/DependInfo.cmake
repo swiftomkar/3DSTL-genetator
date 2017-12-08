@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Omkar Desai/Documents/C++/Data structures/STL/CAD.cpp" "C:/Users/Omkar Desai/Documents/C++/Data structures/STL/cmake-build-debug/CMakeFiles/STL.dir/CAD.cpp.obj"
-  "C:/Users/Omkar Desai/Documents/C++/Data structures/STL/main.cpp" "C:/Users/Omkar Desai/Documents/C++/Data structures/STL/cmake-build-debug/CMakeFiles/STL.dir/main.cpp.obj"
+  "C:/Users/Omkar Desai/Documents/C++/Data structures/3DSTL-genetator/CAD.cpp" "C:/Users/Omkar Desai/Documents/C++/Data structures/3DSTL-genetator/cmake-build-debug/CMakeFiles/STL.dir/CAD.cpp.obj"
+  "C:/Users/Omkar Desai/Documents/C++/Data structures/3DSTL-genetator/main.cpp" "C:/Users/Omkar Desai/Documents/C++/Data structures/3DSTL-genetator/cmake-build-debug/CMakeFiles/STL.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
